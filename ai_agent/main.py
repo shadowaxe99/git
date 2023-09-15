@@ -1,4 +1,3 @@
-```python
 import time
 from ai_agent import agent, config
 
@@ -18,4 +17,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```

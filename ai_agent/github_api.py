@@ -1,7 +1,10 @@
-```python
 import requests
 from typing import List, Dict
 from .config import github_api_key
+
+class GithubAPI:
+    def __init__(self, github_api_key):
+        self.github_api_key = github_api_key
 
 BASE_URL = "https://api.github.com"
 
@@ -25,4 +28,3 @@ def monitor_github(keywords: List[str]) -> List[Dict]:
         response.raise_for_status()
         results.extend(response.json()["items"])
     return results
-```

@@ -1,4 +1,4 @@
-```python
+
 import requests
 from typing import Dict, List
 from .github_api import GithubAPI
@@ -10,7 +10,7 @@ class RepoData:
         self.file_names = file_names
         self.file_contents = file_contents
 
-class DataExtraction:
+class DataExtractor:
     def __init__(self):
         self.github_api = GithubAPI(github_api_key)
 
@@ -30,4 +30,3 @@ class DataExtraction:
         response = requests.get(download_url)
         response.raise_for_status()
         return response.text
-```

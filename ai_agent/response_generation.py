@@ -1,7 +1,11 @@
-```python
+
 from typing import List
 from .data_analysis import AnalysisResult
 from .github_api import RepoData
+
+class ResponseGenerator:
+    def __init__(self):
+        pass
 
 class Response:
     def __init__(self, description: str, relevance: str, additional_info: str):
@@ -18,4 +22,3 @@ def generate_response(analysis_results: List[AnalysisResult], prompt: str) -> Li
         response = Response(description, relevance, additional_info)
         responses.append(response)
     return responses
-```

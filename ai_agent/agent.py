@@ -1,4 +1,3 @@
-```python
 from .github_api import GithubAPI
 from .data_extraction import DataExtractor
 from .data_analysis import DataAnalyzer
@@ -24,4 +23,3 @@ class AIAgent:
 
     def start_monitoring(self):
         self.monitor.start_monitoring(self.process_prompt)
-```
